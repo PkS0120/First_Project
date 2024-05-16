@@ -1,0 +1,833 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #F5F5F5;
+    --secondary: #F2EAD3;
+    --accent: #3F2305;
+    --base: #DFD7BF;
+}
+body
+{
+    --bs-body-bg: var(--secondary);
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  background-color: var(--secondary);
+  z-index: 2;
+}
+.navbar
+{
+    background: var(--secondary) !important;
+    
+    display: flex;
+
+}
+.navbar-brand
+{
+    margin-right: 500px !important;
+}
+.navbar-nav
+{
+  justify-content: center;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  gap: 50px;
+}
+.main
+{
+    background-image: url("coffee.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+    display: flex;
+    margin-bottom: 100px;
+}
+.row img
+{
+  border-radius: 40px;
+}
+.heading
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1
+{
+    color:var(--secondary);
+    font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  font-size: 70px;
+  text-decoration: underline;
+  text-decoration-color:burlywood;
+  line-height: 120px;
+}
+.heading h6
+{
+    font-family: "Lexend Tera", sans-serif;
+    margin-top: 50px;
+}
+.content img
+{
+    border-radius: 50px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 50px;
+    color: var(--accent);
+}
+.navbar-collapse i
+{
+  font-size: 33px;
+  position: absolute;
+  right: 37px;
+  color: var(--accent);
+}
+
+.about
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 100px;
+   
+}
+.about h2
+{
+    align-self: center;
+    font-size: 70px;
+    font-family: "Doppio One", sans-serif;
+    color: var(--accent);
+    margin-bottom: 50px;
+}
+.about p
+{
+    padding: 0 75px;
+}
+.line
+{
+    position: absolute ;
+     animation: mymove 5s infinite;
+    left: 67px;
+}
+.line2
+{
+    position: absolute ;
+     animation: mymove 5s infinite;
+    right: 101px;
+}
+@keyframes mymove {
+  0% {transform:rotate(-20deg)}
+  50% {transform:rotate(20deg);}
+    100% {transform:rotate(-20deg);}
+}
+.menu
+{
+   background-image:url("line3.png");
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+align-items: center;
+
+}
+.menu h4
+{
+     
+    font-size: 50px;
+    font-family: "Doppio One", sans-serif;
+    color: var(--accent);
+   
+    text-decoration: underline;
+    text-decoration-style: double;
+    margin-top: 54px;
+    margin-bottom: 55px;
+   
+}
+.sellers
+{
+    display: flex;
+    height: 94vh;
+    width: 100%;
+padding-bottom: 110px;
+    justify-content: center;
+    
+    
+}
+.sell
+{
+    align-self: center;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 180ms ease-in-out;
+}
+.sell:hover
+{
+  margin-bottom: 20px;
+}
+.imagebox
+{
+    height: 171px;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+
+}
+.imagebox img
+{
+    max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.sell h5
+{
+     font-size: 30px;
+     font-family: "Philosopher", sans-serif;
+    color: var(--accent);
+}.menu-card {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-left {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .menu-right {
+    width: 50%;
+    padding: 20px;
+    margin-left: 15px;
+  }
+  
+  .menu-card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .menu-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-card li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-card li h2 {
+    margin: 0 0 0 150px;
+    font-size: 20px;
+  }
+  
+  .menu-card li p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px; /* Added this line */
+  }
+  
+  .menu-card h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--accent);
+  }
+  .menu-right li p
+  {
+    margin-right: 150px;
+  }
+  .gapping
+  {
+    margin-bottom: 70px;
+  }
+  .location
+  {
+    margin-top: 8vh;
+  }
+  .location h1
+  {
+    font-size: 50px;
+    font-family: "Doppio One", sans-serif;
+    color: var(--accent);
+  }
+  .locate
+  {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 5px;
+    padding: 10px;
+    background: transparent;
+    transition: 180ms ease-in-out;
+
+  
+  
+  }
+  .locate:hover
+  {
+    background: var(--accent);
+    color: var(--secondary);
+  }
+  .contact
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .contact-container {
+    display: flex;
+    
+   
+   
+    justify-content: center;
+  
+    padding: 20px;
+    
+  }
+  .contact h1
+  {
+    font-size: 70px;
+    font-family: "Doppio One", sans-serif;
+    color: var(--accent);
+    margin: 50px 0;
+  }
+  
+  .section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-left: 0.8px dotted var(--accent);
+    border-right: 0.8px dotted var(--accent);
+
+  }
+  
+  .section-logo,   
+  .section-phone,
+  .section-address,
+  .section-subscription {
+    margin-top: 30px;
+  }
+  
+  .btn-call {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .btn-subscribe {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .social 
+  {
+    margin-top: 40px;
+  }
+  .socials
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .socialite
+  {
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    margin: 10px;
+    transition: 180ms ease-in-out;
+
+  }
+  .socialite i
+  {
+    color: var(--accent);
+    font-size: 25px;
+    
+  }
+  .socialite:hover
+  {
+    background: var(--accent);
+    cursor: pointer;
+    
+  }
+  .socialite:hover i
+  {
+    color: var(--secondary);
+  }
+  .contact h2
+  {
+    font-family: "Philosopher", sans-serif;
+    color: var(--accent);
+    font-weight: bolder;
+  }
+  .footer {
+    background-color: var(--accent);
+    padding: 1px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    color: var(--secondary);
+   width: 100%;
+  }
+.footer p
+{
+      margin-bottom: 0 !important;
+}
+  
+
+
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#navbarNav a
+{
+  color: #3F2305;
+
+}
+
+#navbarNav a:hover
+{
+ 
+  transform: translateY(-3px);
+  cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+
+
+
+
+.fade-in{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.fade-in.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.togglenavigate
+{
+  
+  
+  background: #3F2305;
+  right: 0;
+    
+    overflow-x: hidden;
+    
+    z-index: 8;
+    position: fixed;
+    height: 100%;
+    padding-top: 25%;
+    transition: 0.2s linear;
+    
+   
+   
+}
+#togglenavigate
+{
+  width: 0%;
+  
+}
+.togglenavigate a
+{
+  text-decoration: none;
+}
+.togglenavigate  a H3
+{
+  color: var(--base);
+  font-family: "Philosopher", sans-serif;
+  margin-top: 40%;
+  
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 767.98px) {
+  
+    .contact-container {
+      flex-direction: row;
+    }
+    body 
+    {
+      background-color: var(--secondary) !important;
+    }
+    .navbar-brand
+    {
+      margin-right: 0px !important;
+    }
+  
+    .section-phone {
+      flex-basis: 50%;
+    }
+  
+    .section-address {
+      flex-basis: 50%;
+    }
+    .container-fluid {
+      height: auto;
+    }
+    .col-md-6 {
+      width: 100%;
+    }
+    .order-md-2 {
+      order: 1;
+    }
+    .order-md-1 {
+      order: 2;
+    }
+    .contact-info 
+    {
+    padding: 0 20px;
+    } 
+    .btn-call 
+    {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .heading h1
+  {
+    line-height: 74px;
+    text-align: center;
+    font-size: 53px;
+  }
+  .heading h6
+  {
+    font-size: 0.7rem;
+  }
+  .section {
+    margin-top: 30px;
+  }
+  .section-phone,
+  .section-address,
+  .section-subscription {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container
+  {
+    flex-direction: column;
+  }
+  .img-responsive {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  
+    .content-container {
+      padding: 30px;
+      
+    }
+    .about
+    {
+    padding: 30px 5px;
+    }
+    .about p
+    {
+      padding: 2px;
+    }
+    .line2
+    {
+      left: 0;
+    opacity: 0.18;
+    animation: none;
+    height: 100%;
+    width: 100%;
+    }  
+    .line
+    {
+      display: none;
+    }
+    .menu
+    {
+      background-image: none;
+      height: fit-content;
+
+    }
+    .menu h4
+    {
+      text-decoration: none;
+      font-size: 42px;
+    }
+    .menu-card
+    {
+      flex-direction: column;
+      height: fit-content;
+
+    }
+    .menu-left
+    {
+      width: 100%;
+    }
+    .menu-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      margin: 10px 0;
+    }
+  
+    .menu-left ul li h2,
+    .menu-right ul li h2 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      margin-left: 0px;
+    }
+  .menu-right li p
+  {
+    margin-right: 0;
+  }
+    .menu-left ul li p,
+    .menu-right ul li p {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    .location img 
+    {
+     position: absolute;
+     bottom: 0px;
+     top: 160px;
+     border-radius: 0% !important;
+     opacity: 0.1;
+    }
+    .location
+    {
+      position: relative;
+      
+    
+
+    }
+    .sell
+    {
+      height: fit-content;
+      padding: 50px 0;
+      
+    }
+    .sell h5
+    {
+      margin: 35px 0;
+    }
+    .sellers
+    {
+      gap: 40px;
+      height: fit-content;
+      flex-direction: column;
+    }
+
+}
+
